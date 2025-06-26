@@ -21,11 +21,6 @@ class UserListViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
-    
     private func configureUI(){
         self.view.backgroundColor = Constants.Colors.backgroundColor
         
@@ -216,6 +211,5 @@ extension UserListViewController: UserListViewModelDelegate{
         alert.addAction(UIAlertAction(title: "Cancel", style: .cancel))
         present(alert, animated: true)
     }
-    
     
 }

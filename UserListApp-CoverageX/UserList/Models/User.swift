@@ -15,7 +15,7 @@ struct User:Codable{
     let picture: Picture
     
     var fullName: String {
-        return "\(name.title) \(name.first) \(name.last)"
+        return "\(name.title). \(name.first) \(name.last)"
     }
     
     var displayName: String {
